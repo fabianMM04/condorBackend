@@ -5,8 +5,8 @@ var Schema = mongoose.Schema;
 
 var SpecialtiesSchema = Schema({
     name: String,
-    createdBy: {type: Schema.ObjectId, ref: 'User'},
-    updatedBy: {type: Schema.ObjectId, ref: 'User'},
+    createdBy: Number,
+    updatedBy: Number,
     createdAt: Date,
     updatedAt: Date
 });

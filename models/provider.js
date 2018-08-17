@@ -8,7 +8,9 @@ var ProviderSchema = Schema({
     lastName: String,
     middleName: String,
     status: Boolean,
-    createdBy: {type: Schema.ObjectId, ref: 'User'}
+    user: {type: Schema.ObjectId, ref: 'User'},
+    specialtie: {type: Schema.ObjectId, ref: 'Specialtie'},
+    createdDate: Date
 });
 
 module.exports = mongoose.model('Provider', ProviderSchema);
