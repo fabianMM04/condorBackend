@@ -70,7 +70,7 @@ function getProviders(req, res){
         }else{
             if(!providers){
                 res.status(404).send({
-                    message: "Error to find providers"
+                    message: "Error to finds providers"
                 });
             }else{
                 res.status(200).send({
@@ -145,7 +145,7 @@ function deleteProvider(req, res){
         }else{
             if(!providerDeleted){
                 res.status(404).send({
-                    message: "Error to save provider"
+                    message: "Error to delete provider"
                 });
             }else{
                 res.status(200).send({

@@ -44,8 +44,8 @@ function saveUser(req, res){
             }else{
                 // If user doesn't exist create one with the data that came from the request
                 if(!userFinded){
-                    user.name = params.email;
-                    user.email = params.name;
+                    user.name = params.name;
+                    user.email = params.email;
                     user.userRegistre = moment().format('YYYY MM DD HH:mm:ss');
                     
                     // Encrypt the password and save the user
